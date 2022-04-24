@@ -550,14 +550,14 @@ const Home = (props: HomeProps) => {
             <MainContainer>
                 <WalletContainer>
                     <Logo><a href="http://localhost:3000/" target="_blank" rel="noopener noreferrer"><img alt=""
-                                                                                                          src="logo.png"/></a></Logo>
+                                                                                                          src="logo.jpeg"/></a></Logo>
                     <Menu>
-                        <li><a href="http://localhost:3000/" target="_blank" rel="noopener noreferrer">Menu 1</a>
+                        {/* <li><a href="http://localhost:3000/" target="_blank" rel="noopener noreferrer">Menu 1</a>
                         </li>
                         <li><a href="http://localhost:3000/" target="_blank"
                                rel="noopener noreferrer">Menu 2</a></li>
                         <li><a href="http://localhost:3000/" target="_blank"
-                               rel="noopener noreferrer">Menu 3</a></li>
+                               rel="noopener noreferrer">Menu 3</a></li> */}
                     </Menu>
                     <Wallet>
                         {wallet ?
@@ -570,12 +570,12 @@ const Home = (props: HomeProps) => {
                 <MintContainer>
                     <DesContainer>
                         <NFT elevation={3}>
-                            <h2>My NFT</h2>
+                            <h2>Talisman Treasure</h2>
                             <br/>
                             <div><Price
                                 label={isActive && whitelistEnabled && (whitelistTokenBalance > 0) ? (whitelistPrice + " " + priceLabel) : (price + " " + priceLabel)}/><Image
-                                src="cool-cats.gif"
-                                alt="NFT To Mint"/></div>
+                                src="talisman-treasure.gif"
+                                alt="Talisman Treasure"/></div>
                             <br/>
                             {wallet && isActive && whitelistEnabled && (whitelistTokenBalance > 0) && isBurnToken &&
                               <h3>You own {whitelistTokenBalance} WL mint {whitelistTokenBalance > 1 ? "tokens" : "token" }.</h3>}
